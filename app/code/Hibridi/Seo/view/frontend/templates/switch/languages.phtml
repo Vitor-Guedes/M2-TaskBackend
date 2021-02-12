@@ -1,0 +1,5 @@
+<?php /** @var \Hibridi\Seo\Block\SeoLanguage $block */ ?>
+
+<?php foreach ($block->getAllCodes() as $code) : ?>
+    <link rel="alternate" hreflang="<?php echo $code ?>" href="<?php echo $block->getCurrentUrl() ?>"/>
+<?php endforeach ; ?>
